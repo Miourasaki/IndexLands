@@ -1,0 +1,26 @@
+
+
+# A master option(u‿ฺu✿ฺ) ...weird, right?
+enable: false
+
+# I think you should understand what this means, right? (●'◡'●)
+# or you can choose resource pack translate, use option: local
+lang: en
+
+
+
+
+
+
+# After turning on the debug mode, it will be re-read every time before obtaining the configuration.
+# Of course this has no effect on option "enable" and "debug"
+# !!! Not recommended to be enabled in production environments !!!
+debug: false
+
+#...
+#..........
+#...............
+#...............
+# There's nothing else here!
+config-version: '1'
+# !!! do not change o(≧口≦)o !!!

@@ -1,0 +1,29 @@
+#==========================
+# Sample document(。﹏。*)
+#==========================
+
+# The system will use the language used by the player if it is not available.(❁´◡`❁)
+# When the "lang" option is "local" (use lang file in the resource pack), you can refer to the language key here
+
+# It is recommended to use it with MiniMessage's <lang:{key}>
+# instead of using server or client language files alone.        <-- better that way(★ ω ★)
+
+
+# This plugin supports using MiniMessage formatting and papi  o(〃＾▽＾〃)o
+# MiniMessage uses like XML tag syntax. Specific documentation ↓
+#                             https://docs.advntr.dev/minimessage/format.html
+
+language.name: "English"
+
+# You can use the {prefix} placeholder to use this key in other keys
+indexlands.prefix: "<b><#b2baca>ILand<aqua>>></aqua></b><white>"
+
+
+indexlands.command.unknown: "{prefix} <red>Unknown IndexLands subcommand"
+indexlands.command.permission: "{prefix} <red>You don't have permission"
+
+
+# Key used during testing, useless
+indexlands.debug.hello: "<#934><b>Hello %player_name%"
+indexlands.debug.helloprefix: "{prefix} <#934><b>Hello %player_name%"
+indexlands.debug.rainbow: "{prefix} <rainbow>Hello World, Hello MiniMessage, HelloRainBow!!!"

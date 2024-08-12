@@ -1,0 +1,36 @@
+# Sorry! ! ! I only did mongodb <。)#)))≦
+
+#=================================DB LIST
+# file:
+#   × JSON(Why are you thinking about json, ymal is compatible with json!)
+#   × YAML(That’s not supported yet!)
+#
+# local database:
+#   × SQLite (H2 preferred over SQLite)
+#   × H2 (But neither of these is supported)
+#
+# remote database:
+#   × MySQL (MariaDB is preferred over MySQL!!)
+#   × MariaDB (GOTO H2)
+#   ✓ MongoDB (only support)
+#=================================ENDIF (what? ENDIF????)
+database-type: MongoDB
+
+# !!! please do not add "_" !!!
+#                        ↑ Why does it look like a kaomoji(⊙x⊙;)?
+table-prefix: indexlands
+# ↑ or you can call it collection
+
+MongoDB:
+  host: 'localhost'
+  port: '27017'
+  # You need to know that mongodb does not enable auth by default!!!
+  # Everything here is default(╬▔皿▔)╯
+  #user: 'root'
+  #password: 'password'
+
+  # If this section is not empty, it would override the configs above
+  # https://www.mongodb.com/docs/manual/reference/connection-string/
+  connection-uri: ''
+
+  database: 'minecraft'

@@ -1,0 +1,23 @@
+jar {
+    archiveBaseName = "IndexLands"
+}
+
+
+dependencies {
+    // main lib
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    compileOnly "io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT"
+
+    // plugin lib
+    compileOnly 'me.clip:placeholderapi:2.11.6'
+    compileOnly 'maven.modrinth:pl3xmap:1.21-500'
+
+    // api module
+    implementation project(':api')
+
+
+    // other
+
+    // database
+    implementation 'org.mongodb:mongodb-driver-sync:5.1.2'
+}

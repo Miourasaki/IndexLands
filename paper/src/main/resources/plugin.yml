@@ -1,0 +1,40 @@
+name: IndexLands
+version: '${version}'
+main: net.miourasaki.indexlands.IndexLandsImpl
+api-version: '1.21'
+load: STARTUP
+author: Miourasaki
+description: "⚜ !!!this is a disgusting piece of garbage!!! configurability, playability, territory protection, map plug-in compatibility"
+website: https://github.com/Miourasaki/IndexLands
+
+softdepend:
+  - PlaceholderAPI
+  - ItemsAdder
+  - ProtocolLib
+
+commands:
+  indexlands:
+    description: "All commands for IndexLands"
+    usage: "§cUsage: /land <subcommand> ... | /land is an alias of /land menu"
+    aliases:
+      - land
+      - lands
+      - iland
+      - ilands
+  indexdebug:
+    permission: indexlands.admin
+
+permissions:
+  indexlands.command:
+    description: "command permissions"
+    default: not op
+    children:
+      indexlands.command.create: true
+      indexlands.command.gui: true
+  indexlands.admin:
+    description: "admin permissions node"
+    default: op
+
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.0.10
+  - org.mongodb:mongodb-driver-sync:5.1.2
